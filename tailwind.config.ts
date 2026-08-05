@@ -10,16 +10,17 @@ const config: Config = {
     extend: {
       colors: {
         spotify: {
-          green: "#FFC5D3",
-          "green-hover": "#FFB0C2",
+          green: "#E63946",
+          "green-hover": "#C70039",
           pink: "#FFC5D3",
           "pink-hover": "#FFB0C2",
-          black: "#121212",
-          card: "#181818",
-          "card-hover": "#282828",
-          subtext: "#b3b3b3",
-          light: "#282828",
-          sidebar: "#000000"
+          rose: "#E63946",
+          black: "#FFFFFF",
+          card: "#FFFFFF",
+          "card-hover": "#FFF0F3",
+          subtext: "#666666",
+          light: "#FFE4E8",
+          sidebar: "#FFFFFF"
         },
       },
       fontFamily: {

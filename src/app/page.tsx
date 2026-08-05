@@ -15,15 +15,15 @@ import { Heart } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div className="flex h-screen overflow-hidden bg-black font-sans">
+    <div className="flex h-screen overflow-hidden bg-white font-sans">
       {/* Left Navigation Sidebar */}
       <Sidebar />
 
-      {/* Main Content Area */}
-      <main className="flex-1 flex flex-col h-full overflow-y-auto bg-spotify-black scrollbar-thin relative scroll-smooth">
+      {/* Main Content Area with White to Pink to Red Rose Scroll Gradient */}
+      <main className="flex-1 flex flex-col h-full overflow-y-auto bg-gradient-to-b from-white via-[#FFE4E8] via-[#FF809B] via-[#E63946] to-[#590D22] text-neutral-900 scrollbar-thin relative scroll-smooth">
         <TopBar />
 
-        <div className="max-w-7xl mx-auto w-full flex flex-col gap-6 pt-4">
+        <div className="max-w-7xl mx-auto w-full flex flex-col gap-8 pt-4">
           <AboutSection />
           <ProjectTracklist />
           <OrganizationGrid />
@@ -32,17 +32,17 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="p-8 border-t border-spotify-light/20 bg-spotify-black text-spotify-subtext flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium pb-32">
+        <footer className="p-8 border-t border-rose-400/40 text-white flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium pb-32">
           <div className="flex items-center gap-2">
             <span className="text-white font-bold">{PERSONAL_INFO.name}</span>
             <span>•</span>
-            <span>Quality Assurance & Web Development Portfolio</span>
+            <span className="text-rose-100">Quality Assurance & Web Development Portfolio</span>
           </div>
 
-          <div className="flex items-center gap-1.5 text-spotify-subtext">
+          <div className="flex items-center gap-1.5 text-rose-100">
             <span>Designed with</span>
-            <Heart className="w-3.5 h-3.5 text-spotify-green fill-spotify-green" />
-            <span>in Spotify Style using Next.js & Tailwind CSS</span>
+            <Heart className="w-3.5 h-3.5 text-pink-200 fill-pink-200" />
+            <span>in Spotify Style with White to Pink Rose Gradient</span>
           </div>
         </footer>
       </main>

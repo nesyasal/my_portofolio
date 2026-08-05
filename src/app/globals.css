@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #121212;
-  --foreground: #ffffff;
+  --background: #FFFFFF;
+  --foreground: #1A1A1A;
 }
 
 body {
@@ -14,23 +14,23 @@ body {
   overflow-x: hidden;
 }
 
-/* Custom Scrollbar styled for Spotify */
+/* Custom Scrollbar styled for Pink Rose theme */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212;
+  background: #FFE4E8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #282828;
+  background: #FF809B;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3e3e3e;
+  background: #E63946;
 }
 
 @keyframes fadeIn {
@@ -57,6 +57,6 @@ input[type=range]::-webkit-slider-thumb {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background: #FFC5D3;
+  background: #E63946;
   cursor: pointer;
 }

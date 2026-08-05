@@ -326,8 +326,8 @@ export const CERTIFICATIONS: CertificationItem[] = [
 ];
 
 export const SKILLS_DATA = {
-  qaTesting: [,
-    { name: "Manual & Exploratory Testing", level: 90},
+  qaTesting: [
+    { name: "Manual & Exploratory Testing", level: 90 },
     { name: "Test Case & Scenario Design", level: 92 },
     { name: "Katalon Studio Automation", level: 88 },
     { name: "User Acceptance Testing (UAT)", level: 88 },

@@ -6,8 +6,9 @@ import { UserCheck, GraduationCap, MapPin, Mail, Phone, Github, Linkedin, Shield
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="p-4 sm:p-8 flex flex-col gap-6 text-neutral-900 pt-6">
+    <section id="about" className="p-4 sm:p-8 flex flex-col gap-6 text-neutral-900">
       <div className="flex items-center gap-3">
+        <div className="w-3 h-8 bg-rose-500 rounded-full" />
         <h2 className="text-2xl md:text-3xl font-black tracking-tight text-neutral-900">About Me</h2>
       </div>
 
@@ -79,7 +80,7 @@ export const AboutSection: React.FC = () => {
             <div className="bg-pink-50/80 p-4 rounded-2xl border border-pink-200 flex flex-col gap-2">
               <div className="flex items-center gap-2 text-rose-600 font-bold text-xs">
                 <ShieldCheck className="w-4 h-4 text-rose-500" />
-                <span>Core QA Specialization</span>
+                <span> QA Specialization</span>
               </div>
               <p className="text-xs text-neutral-700 leading-relaxed">
                 Katalon Studio Automation, Manual Testing, Test Scenario & Case Writing, UAT Execution, Bug Verification.

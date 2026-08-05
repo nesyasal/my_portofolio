@@ -31,17 +31,17 @@ export default function Home() {
           <CertificationsSection />
         </div>
 
-        {/* Clean, Centered Mobile & Desktop Footer */}
-        <footer className="mx-4 my-8 p-6 rounded-2xl bg-black/40 backdrop-blur-md border border-white/20 text-white flex flex-col items-center justify-center text-center gap-3 text-xs font-medium pb-32 md:pb-28 shadow-lg">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-1.5 sm:gap-2">
-            <span className="text-white font-black text-sm tracking-wide">{PERSONAL_INFO.name}</span>
-            <span className="hidden sm:inline text-rose-200">•</span>
-            <span className="text-rose-100 font-medium">Quality Assurance & Web Development Portfolio</span>
+        {/* Footer */}
+        <footer className="p-8 border-t border-rose-400/40 text-white flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-medium pb-32">
+          <div className="flex items-center gap-2">
+            <span className="text-white font-bold">{PERSONAL_INFO.name}</span>
+            <span>•</span>
+            <span className="text-rose-100">Quality Assurance & Web Development Portfolio</span>
           </div>
 
-          <div className="flex items-center justify-center gap-1.5 text-rose-200 text-[11px]">
+          <div className="flex items-center gap-1.5 text-rose-100">
             <span>Designed with</span>
-            <Heart className="w-3.5 h-3.5 text-pink-300 fill-pink-300" />
+            <Heart className="w-3.5 h-3.5 text-pink-200 fill-pink-200" />
             <span>in Spotify Style with White to Pink Rose Gradient</span>
           </div>
         </footer>

@@ -15,6 +15,7 @@ export const OrganizationGrid: React.FC = () => {
     <section id="organizations" className="p-4 sm:p-8 flex flex-col gap-6 text-neutral-900">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
+          <div className="w-3 h-8 bg-rose-500 rounded-full" />
           <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white drop-shadow">Organizations & Leadership</h2>
           <span className="text-xs bg-white/20 text-white px-2.5 py-1 rounded-full font-mono backdrop-blur-sm">
             {ORGANIZATIONS.length} Albums
@@ -90,7 +91,7 @@ export const OrganizationGrid: React.FC = () => {
               {/* Expand Toggle Bar */}
               <div className="pt-3 mt-2 border-t border-pink-100 flex items-center justify-between text-xs text-neutral-500 font-semibold">
                 <span>{isExpanded ? 'Hide Details' : 'View Full Role'}</span>
-                {isExpanded ? <ChevronDown className="w-4 h-4 text-rose-500" /> : <ChevronDown className="w-4 h-4" />}
+                {isExpanded ? <ChevronUp className="w-4 h-4 text-rose-500" /> : <ChevronDown className="w-4 h-4" />}
               </div>
             </div>
           );

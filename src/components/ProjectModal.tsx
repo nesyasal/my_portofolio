@@ -14,25 +14,24 @@ export const ProjectModal: React.FC = () => {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/70 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 animate-fadeIn"
+      className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 animate-fadeIn"
       onClick={closeModal}
     >
       <div
-        className="bg-white border border-pink-200 rounded-3xl w-full max-w-2xl sm:max-w-3xl max-h-[90vh] overflow-y-auto text-neutral-900 shadow-2xl flex flex-col relative scrollbar-thin"
+        className="bg-white border border-pink-200 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto text-neutral-900 shadow-2xl flex flex-col relative scrollbar-thin"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={closeModal}
-          className="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center backdrop-blur-md transition-all border border-white/30 shadow-lg"
-          title="Close Modal"
+          className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/80 hover:bg-pink-100 flex items-center justify-center text-neutral-600 hover:text-neutral-900 transition-all border border-pink-200 shadow-md"
         >
           <X className="w-5 h-5" />
         </button>
 
         {/* Modal Header Banner */}
-        <div className="bg-gradient-to-r from-rose-500 via-pink-500 to-rose-600 p-5 sm:p-8 rounded-t-3xl border-b border-pink-200 flex flex-col gap-3 relative text-white shadow-md">
-          <div className="flex items-center gap-2 text-pink-100 text-xs font-bold uppercase tracking-widest pr-10">
+        <div className="bg-gradient-to-r from-rose-500 via-pink-600 to-rose-600 p-6 sm:p-8 rounded-t-3xl border-b border-pink-200 flex flex-col gap-4 relative overflow-hidden text-white shadow-md">
+          <div className="flex items-center gap-2 text-pink-200 text-xs font-bold uppercase tracking-widest">
             {selectedModalProject.category === 'QA' ? (
               <>
                 <ShieldCheck className="w-4 h-4 text-pink-200" />
@@ -51,20 +50,22 @@ export const ProjectModal: React.FC = () => {
             )}
           </div>
 
-          <h2 className="text-xl sm:text-3xl font-black text-white leading-snug pr-10">
+          <h2 className="text-2xl sm:text-4xl font-black text-white leading-tight">
             {selectedModalProject.title}
           </h2>
 
-          <div className="flex flex-wrap items-center gap-3 text-xs text-pink-100 font-semibold pt-1">
-            <div className="flex items-center gap-1 text-white font-bold bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-xs">
+          <div className="flex flex-wrap items-center gap-4 text-xs text-pink-100 font-semibold">
+            <div className="flex items-center gap-1 text-white font-bold">
               <User className="w-3.5 h-3.5" />
               <span>{selectedModalProject.role}</span>
             </div>
-            <div className="flex items-center gap-1 bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-xs">
+            <span>•</span>
+            <div className="flex items-center gap-1">
               <Calendar className="w-3.5 h-3.5" />
               <span>Year {selectedModalProject.year}</span>
             </div>
-            <div className="flex items-center gap-1 bg-white/20 px-2.5 py-1 rounded-full backdrop-blur-xs font-mono">
+            <span>•</span>
+            <div className="flex items-center gap-1 font-mono">
               <FileText className="w-3.5 h-3.5 text-pink-200" />
               <span>{selectedModalProject.plays} Plays</span>
             </div>
@@ -72,34 +73,34 @@ export const ProjectModal: React.FC = () => {
         </div>
 
         {/* Action Bar */}
-        <div className="p-4 sm:p-6 border-b border-pink-100 flex flex-wrap items-center justify-between gap-3 bg-pink-50/60">
-          <div className="flex items-center gap-3">
+        <div className="p-6 border-b border-pink-100 flex flex-wrap items-center justify-between gap-4 bg-pink-50/50">
+          <div className="flex items-center gap-4">
             <button
               onClick={() => playProject(selectedModalProject)}
-              className="w-11 h-11 rounded-full bg-rose-500 hover:bg-rose-600 text-white flex items-center justify-center shadow-lg transition-all"
+              className="w-12 h-12 rounded-full bg-rose-500 hover:bg-rose-600 text-white flex items-center justify-center shadow-lg transition-all"
             >
               {isCurrentPlaying ? (
-                <Pause className="w-5 h-5 fill-white stroke-white" />
+                <Pause className="w-6 h-6 fill-white stroke-white" />
               ) : (
-                <Play className="w-5 h-5 fill-white stroke-white ml-0.5" />
+                <Play className="w-6 h-6 fill-white stroke-white ml-0.5" />
               )}
             </button>
 
             {isCurrentPlaying && (
               <div className="flex items-center gap-2 text-rose-600 text-xs font-bold">
                 <AudioVisualizer isPlaying={true} barCount={4} height="h-4" color="bg-rose-500" />
-                <span className="hidden sm:inline">Now Playing Project Track</span>
+                <span>Now Playing Project Track</span>
               </div>
             )}
           </div>
 
-          <div className="flex flex-wrap items-center gap-2.5 w-full sm:w-auto">
+          <div className="flex items-center gap-3">
             {selectedModalProject.spreadsheetUrl && (
               <a
                 href={selectedModalProject.spreadsheetUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 bg-rose-500 hover:bg-rose-600 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all shadow-md flex-1 sm:flex-initial"
+                className="px-4 py-2 bg-rose-500 text-white font-bold text-xs rounded-full flex items-center gap-2 transition-all hover:bg-rose-600 shadow-md"
               >
                 <FileSpreadsheet className="w-4 h-4 text-white" />
                 <span>Testing Document (Spreadsheet)</span>
@@ -112,7 +113,7 @@ export const ProjectModal: React.FC = () => {
                 href={selectedModalProject.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 bg-white hover:bg-pink-100 text-neutral-800 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all border border-pink-200 shadow-xs flex-1 sm:flex-initial"
+                className="px-4 py-2 bg-white hover:bg-pink-100 text-neutral-800 font-bold text-xs rounded-full flex items-center gap-2 transition-all border border-pink-200 shadow-sm"
               >
                 <Github className="w-4 h-4 text-rose-600" />
                 <span>GitHub Repository</span>
@@ -125,11 +126,10 @@ export const ProjectModal: React.FC = () => {
                 href={selectedModalProject.publicationUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all shadow-md flex-1 sm:flex-initial"
+                className="px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs rounded-full flex items-center gap-2 transition-all shadow-md"
               >
                 <Sparkles className="w-4 h-4 text-purple-200" />
                 <span>Read Q2 Paper</span>
-                <ExternalLink className="w-3 h-3 text-purple-200" />
               </a>
             )}
 
@@ -138,7 +138,7 @@ export const ProjectModal: React.FC = () => {
                 href={selectedModalProject.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 bg-white hover:bg-pink-100 text-neutral-800 font-bold text-xs rounded-xl flex items-center justify-center gap-2 transition-all border border-pink-200 shadow-xs flex-1 sm:flex-initial"
+                className="px-4 py-2 bg-white hover:bg-pink-100 text-neutral-800 font-bold text-xs rounded-full flex items-center gap-2 transition-all border border-pink-200 shadow-sm"
               >
                 <ExternalLink className="w-4 h-4 text-rose-500" />
                 <span>Live App Demo</span>
@@ -148,18 +148,18 @@ export const ProjectModal: React.FC = () => {
         </div>
 
         {/* Content Details */}
-        <div className="p-5 sm:p-8 flex flex-col gap-6">
+        <div className="p-6 sm:p-8 flex flex-col gap-6">
           {/* Summary */}
           <div className="flex flex-col gap-2">
-            <h3 className="text-xs font-bold text-rose-600 uppercase tracking-wider">Project Summary</h3>
-            <p className="text-sm text-neutral-800 leading-relaxed bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
+            <h3 className="text-sm font-bold text-rose-600 uppercase tracking-wider">Project Summary</h3>
+            <p className="text-sm text-neutral-700 leading-relaxed bg-pink-50/50 p-4 rounded-2xl border border-pink-100">
               {selectedModalProject.description}
             </p>
           </div>
 
           {/* Key Deliverables & QA Specs */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-xs font-bold text-rose-600 uppercase tracking-wider">Key Highlights & Execution</h3>
+            <h3 className="text-sm font-bold text-rose-600 uppercase tracking-wider">Key Highlights & Execution</h3>
             <div className="flex flex-col gap-2.5">
               {selectedModalProject.keyHighlights.map((highlight, idx) => (
                 <div key={idx} className="flex items-start gap-3 bg-pink-50/70 p-3.5 rounded-xl border border-pink-200">
@@ -172,7 +172,7 @@ export const ProjectModal: React.FC = () => {
 
           {/* Tech Stack List */}
           <div className="flex flex-col gap-3">
-            <h3 className="text-xs font-bold text-rose-600 uppercase tracking-wider">Technologies & Tools</h3>
+            <h3 className="text-sm font-bold text-rose-600 uppercase tracking-wider">Technologies & Tools</h3>
             <div className="flex flex-wrap gap-2">
               {selectedModalProject.techStack.map((tech, idx) => (
                 <span

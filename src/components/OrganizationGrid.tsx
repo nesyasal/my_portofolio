@@ -16,8 +16,8 @@ export const OrganizationGrid: React.FC = () => {
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <div className="w-3 h-8 bg-rose-500 rounded-full" />
-          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white drop-shadow">Organizations & Leadership</h2>
-          <span className="text-xs bg-white/20 text-white px-2.5 py-1 rounded-full font-mono backdrop-blur-sm">
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-black">Organizations & Leadership</h2>
+          <span className="text-xs bg-pink-100 text-rose-700 px-2.5 py-1 rounded-full font-mono font-bold border border-pink-200">
             {ORGANIZATIONS.length} Albums
           </span>
         </div>

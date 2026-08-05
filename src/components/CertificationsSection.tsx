@@ -28,13 +28,13 @@ export const CertificationsSection: React.FC = () => {
     <section id="certifications" className="p-4 sm:p-8 flex flex-col gap-6 text-neutral-900 pb-32">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-3 h-8 bg-rose-400 rounded-full" />
-          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white drop-shadow">Certifications</h2>
-          <span className="text-xs bg-white/20 text-white px-2.5 py-1 rounded-full font-mono backdrop-blur-sm">
+          <div className="w-3 h-8 bg-rose-500 rounded-full" />
+          <h2 className="text-2xl md:text-3xl font-black tracking-tight text-black">Certifications</h2>
+          <span className="text-xs bg-pink-100 text-rose-700 px-2.5 py-1 rounded-full font-mono font-bold border border-pink-200">
             {CERTIFICATIONS.length} Verified Proofs
           </span>
         </div>
-        <span className="text-xs text-rose-100 hidden sm:block">
+        <span className="text-xs text-neutral-800 font-medium hidden sm:block">
           Click any badge to view original PDF / Image certificate proof
         </span>
       </div>

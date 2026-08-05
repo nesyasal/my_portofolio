@@ -15,24 +15,24 @@ export const ProjectTracklist: React.FC = () => {
   });
 
   return (
-    <section id="projects" className="p-4 sm:p-8 flex flex-col gap-4 sm:gap-6 text-white">
+    <section id="projects" className="p-4 sm:p-8 flex flex-col gap-4 sm:gap-6 text-neutral-900">
       {/* Header Title */}
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-3 h-8 bg-spotify-green rounded-full" />
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight">Top Projects Tracklist</h2>
-          <span className="text-xs bg-spotify-light text-spotify-subtext px-2.5 py-1 rounded-full font-mono">
+          <div className="w-3 h-8 bg-rose-500 rounded-full" />
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight text-black">Top Projects Tracklist</h2>
+          <span className="text-xs bg-pink-100 text-rose-700 px-2.5 py-1 rounded-full font-mono font-bold border border-pink-200">
             {filteredProjects.length} Tracks
           </span>
         </div>
 
-        <div className="text-xs text-spotify-subtext font-medium hidden sm:block">
+        <div className="text-xs text-neutral-800 font-medium hidden sm:block">
           Click track row to play audio & inspect specs
         </div>
       </div>
 
       {/* Desktop Tracklist Table Header (Hidden on Mobile) */}
-      <div className="hidden md:grid grid-cols-12 px-4 py-2 text-xs font-bold text-spotify-subtext uppercase tracking-wider border-b border-spotify-light/30">
+      <div className="hidden md:grid grid-cols-12 px-4 py-2 text-xs font-bold text-neutral-700 uppercase tracking-wider border-b border-pink-200">
         <div className="col-span-1 text-center">#</div>
         <div className="col-span-5">Title & Tech Stack</div>
         <div className="col-span-4">Role & Category</div>

@@ -49,7 +49,7 @@ export const PERSONAL_INFO = {
   phone: "085694749240",
   github: "https://github.com/nesyasal",
   linkedin: "https://linkedin.com/in/nesyasalmaramadhani",
-  university: "Logistics and International Business University (ULBI) - Bandung",
+  university: "Universitas Logistik dan Bisnis Internasional (ULBI) - Bandung",
   major: "D4 Informatics Engineering",
   yearRange: "2023 – Present",
   monthlyListeners: "14,820 Monthly Code Reviewers",
@@ -174,7 +174,7 @@ export const PROJECTS: ProjectItem[] = [
 export const ORGANIZATIONS: OrganizationItem[] = [
   {
     id: "org-1",
-    name: "ILBBEC English Centre (Logistics & Business)",
+    name: "Inetnational Logistic & Business Baccalaurate English Center (ILBBEC)",
     role: "Head of Public Relations",
     period: "2023–2025",
     category: "Leadership & PR",

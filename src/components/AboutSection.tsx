@@ -80,7 +80,7 @@ export const AboutSection: React.FC = () => {
             <div className="bg-pink-50/80 p-4 rounded-2xl border border-pink-200 flex flex-col gap-2">
               <div className="flex items-center gap-2 text-rose-600 font-bold text-xs">
                 <ShieldCheck className="w-4 h-4 text-rose-500" />
-                <span>Core QA Specialization</span>
+                <span> QA Specialization</span>
               </div>
               <p className="text-xs text-neutral-700 leading-relaxed">
                 Katalon Studio Automation, Manual Testing, Test Scenario & Case Writing, UAT Execution, Bug Verification.

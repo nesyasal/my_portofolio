@@ -18,7 +18,7 @@ export const ProjectModal: React.FC = () => {
       onClick={closeModal}
     >
       <div
-        className="bg-white border border-pink-200 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto text-neutral-900 shadow-2xl flex flex-col relative scrollbar-thin"
+        className="bg-white border border-pink-200 rounded-3xl w-full max-w-3xl max-h-[90vh] overflow-y-auto text-neutral-900 shadow-2xl flex flex-col relative no-scrollbar"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}

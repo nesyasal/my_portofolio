@@ -36,13 +36,13 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="text-white font-bold">{PERSONAL_INFO.name}</span>
             <span>•</span>
-            <span className="text-rose-100">Quality Assurance & Web Development Portfolio</span>
+            <span className="text-rose-100">Porotfolio</span>
           </div>
 
           <div className="flex items-center gap-1.5 text-rose-100">
             <span>Designed with</span>
             <Heart className="w-3.5 h-3.5 text-pink-200 fill-pink-200" />
-            <span>iNext.js and Tailwind CSS</span>
+            <span>Next.js and Tailwind CSS</span>
           </div>
         </footer>
       </main>

@@ -8,7 +8,6 @@ export const SkillsSection: React.FC = () => {
   return (
     <section id="skills" className="p-4 sm:p-8 flex flex-col gap-8 text-neutral-900">
       <div className="flex items-center gap-3">
-        <div className="w-3 h-8 bg-rose-500 rounded-full" />
         <h2 className="text-2xl md:text-3xl font-black tracking-tight text-white drop-shadow">Skills & Technical Proficiency</h2>
       </div>
 

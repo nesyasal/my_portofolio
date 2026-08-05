@@ -29,13 +29,13 @@ export const SkillsSection: React.FC = () => {
             {SKILLS_DATA.qaTesting.map((item, idx) => (
               <div key={idx} className="flex flex-col gap-1.5">
                 <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-neutral-200">{item?.name ?? ''}</span>
-                  <span className="text-spotify-green font-mono font-bold">{item?.level ?? 0 }%</span>
+                  <span className="text-neutral-200">{item?.name}</span>
+                  <span className="text-spotify-green font-mono font-bold">{item?.level}%</span>
                 </div>
                 <div className="w-full h-2 bg-spotify-light rounded-full overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-pink-400 to-spotify-green rounded-full transition-all duration-1000"
-                    style={{ width: `${item?.level ?? 0}%` }}
+                    style={{ width: `${item?.level}%` }}
                   />
                 </div>
               </div>
@@ -59,13 +59,13 @@ export const SkillsSection: React.FC = () => {
             {SKILLS_DATA.hardSkills.map((item, idx) => (
               <div key={idx} className="flex flex-col gap-1.5">
                 <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-neutral-200">{item?.name ?? ''}</span>
-                  <span className="text-spotify-green font-mono font-bold">{item?.level ?? 0 }%</span>
+                  <span className="text-neutral-200">{item?.name}</span>
+                  <span className="text-spotify-green font-mono font-bold">{item?.level}%</span>
                 </div>
                 <div className="w-full h-2 bg-spotify-light rounded-full overflow-hidden">
                   <div
                     className="h-full bg-gradient-to-r from-rose-400 to-pink-300 rounded-full transition-all duration-1000"
-                    style={{ width: `${item?.level ?? 0}%` }}
+                    style={{ width: `${item?.level}%` }}
                   />
                 </div>
               </div>

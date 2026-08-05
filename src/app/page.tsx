@@ -19,8 +19,8 @@ export default function Home() {
       {/* Left Navigation Sidebar */}
       <Sidebar />
 
-      {/* Main Content Area with White to Pink to Red Rose Scroll Gradient */}
-      <main className="flex-1 flex flex-col h-full overflow-y-auto bg-gradient-to-b from-white via-[#FFE4E8] via-[#FF809B] via-[#E63946] to-[#590D22] text-neutral-900 scrollbar-thin relative scroll-smooth">
+      {/* Main Content Area with White to Pink to Red Rose Scroll Gradient (Scrollbar Hidden) */}
+      <main className="flex-1 flex flex-col h-full overflow-y-auto bg-gradient-to-b from-white via-[#FFE4E8] via-[#FF809B] via-[#E63946] to-[#590D22] text-neutral-900 no-scrollbar relative scroll-smooth">
         <TopBar />
 
         <div className="max-w-7xl mx-auto w-full flex flex-col gap-8 pt-4">
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="flex items-center gap-1.5 text-rose-100">
             <span>Designed with</span>
             <Heart className="w-3.5 h-3.5 text-pink-200 fill-pink-200" />
-            <span>in Spotify Style with White to Pink Rose Gradient</span>
+            <span>iNext.js and Tailwind CSS</span>
           </div>
         </footer>
       </main>

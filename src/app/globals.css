@@ -16,8 +16,8 @@ body {
 
 /* Custom Scrollbar styled for Pink Rose theme */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -31,6 +31,16 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #E63946;
+}
+
+/* Utility to hide scrollbars on main page while preserving scroll functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 @keyframes fadeIn {

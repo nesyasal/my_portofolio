@@ -79,7 +79,7 @@ export const CertificationsSection: React.FC = () => {
                 ) : (
                   <ImageIcon className="w-3.5 h-3.5 text-rose-500" />
                 )}
-                <span>View Proof</span>
+                <span>View</span>
                 <ExternalLink className="w-3 h-3 ml-0.5" />
               </div>
             </div>

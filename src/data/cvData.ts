@@ -5,7 +5,7 @@ export interface ProjectItem {
   year: string;
   duration: string;
   plays: string;
-  category: 'QA' | 'AI & ML' | 'Fullstack Web' | 'Desktop & Game';
+  category: 'QA' | 'AI & ML' | 'Fullstack Web' | 'Desktop & Game' | 'Mobile' | 'Desktop';
   techStack: string[];
   description: string;
   keyHighlights: string[];
@@ -47,6 +47,7 @@ export const PERSONAL_INFO = {
   address: "Perumahan Blok 8, No 96. Bandung City, Sarijadi, 40151",
   email: "nsysalma@gmail.com",
   phone: "085694749240",
+  whatsapp: "https://wa.me/6285694749240",
   github: "https://github.com/nesyasal",
   linkedin: "https://linkedin.com/in/nesyasalmaramadhani",
   university: "Universitas Logistik dan Bisnis Internasional (ULBI) - Bandung",
@@ -82,7 +83,7 @@ export const PROJECTS: ProjectItem[] = [
     id: "proj-2",
     title: "Mental Health Sentiment Classification System (Published Q2 Journal)",
     role: "AI Developer & Machine Learning Researcher",
-    year: "2025",
+    year: "2025 - 2026",
     duration: "4:12",
     plays: "38,910",
     category: "AI & ML",
@@ -96,6 +97,24 @@ export const PROJECTS: ProjectItem[] = [
     githubUrl: "https://github.com/nesyasal/fe-e-learning",
     publicationUrl: "https://emitter.eunis.org/journal",
     audioPreviewNote: "Track #2: PSO Hyperparameter Tuning & Sentiment Model Stream"
+  },
+   {
+    id: "proj-7",
+    title: "Mobile Warehouse Manager App",
+    role: "Mobile Developer",
+    year: "2026",
+    duration: "3:10",
+    plays: "31,450",
+    category: "Mobile",
+    techStack: ["Flutter", "Dart", "Mobile", "Inventory Management", "UI/UX Design"],
+    description: "Mobile Warehouse Manager application built with Flutter & Dart for end-to-end warehouse inventory management and intuitive user interface design.",
+    keyHighlights: [
+      "Developed a responsive mobile Warehouse Manager application using Flutter & Dart",
+      "Implemented comprehensive warehouse inventory management processes",
+      "Designed clean, modern user interfaces (UI) and user interactions optimized for mobile devices"
+    ],
+    githubUrl: "https://github.com/MUFLIHAFIF004/GudangMNG",
+    audioPreviewNote: "Track #7: Flutter Dart Engine & Warehouse Inventory Flow"
   },
   {
     id: "proj-3",
@@ -122,7 +141,7 @@ export const PROJECTS: ProjectItem[] = [
     year: "2025",
     duration: "2:55",
     plays: "19,800",
-    category: "Desktop & Game",
+    category: "Desktop",
     techStack: ["C#", ".NET Windows Forms", "MongoDB", "NoSQL Data Architecture"],
     description: "Intuitive Windows Desktop application for patient health data management and monitoring with MongoDB database integration.",
     keyHighlights: [
@@ -168,7 +187,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     githubUrl: "https://github.com/nesyasal/hop_hop_bunny",
     audioPreviewNote: "Track #6: 8-Bit Arcade Hop Hop Bunny Theme"
-  }
+  },
 ];
 
 export const ORGANIZATIONS: OrganizationItem[] = [
@@ -177,11 +196,11 @@ export const ORGANIZATIONS: OrganizationItem[] = [
     name: "Inetnational Logistic & Business Baccalaurate English Center (ILBBEC)",
     role: "Head of Public Relations",
     period: "2023–2025",
-    category: "Leadership & PR",
+    category: "Public Relations",
     description: [
       "Responsible for building and maintaining a positive organizational image",
       "Managed official external communications, social media channels, and public publications",
-      "Actively led public speaking sessions and English skill development programs"
+      "Actively joined public speaking sessions and English skill development programs"
     ],
     skillsGained: ["Public Speaking", "Public Relations", "Social Media Management", "English Communication"],
     coverGradient: "from-pink-600 to-rose-500"
@@ -353,7 +372,7 @@ export const SKILLS_DATA = {
     "High Discipline & Accountability"
   ],
   languages: [
-    { name: "Indonesian", detail: "Native / Active", proficiency: 100 },
+    { name: "Indonesia", detail: "Native / Active", proficiency: 100 },
     { name: "English", detail: "Intermediate (80%)", proficiency: 80 }
   ]
 };

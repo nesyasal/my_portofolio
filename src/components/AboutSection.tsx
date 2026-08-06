@@ -108,10 +108,16 @@ export const AboutSection: React.FC = () => {
               <span>{PERSONAL_INFO.github}</span>
             </a>
 
-            <div className="px-4 py-2 bg-pink-50 text-neutral-700 font-mono text-xs rounded-full flex items-center gap-2 border border-pink-200">
-              <Phone className="w-3.5 h-3.5 text-rose-500" />
+            <a
+              href={PERSONAL_INFO.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-emerald-500 hover:bg-emerald-600 text-white font-mono text-xs font-bold rounded-full flex items-center gap-2 transition-all shadow-md hover:scale-105"
+              title="Chat directly on WhatsApp"
+            >
+              <Phone className="w-3.5 h-3.5 text-white" />
               <span>{PERSONAL_INFO.phone}</span>
-            </div>
+            </a>
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="text-white font-bold">{PERSONAL_INFO.name}</span>
             <span>•</span>
-            <span className="text-rose-100">Porotfolio</span>
+            <span className="text-rose-100">portfolio</span>
           </div>
 
           <div className="flex items-center gap-1.5 text-rose-100">
